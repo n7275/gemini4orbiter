@@ -7,7 +7,7 @@
 #include "vectors.h"
 #include <math.h>
 #include <stdio.h>
-#include <fstream.h>
+#include <fstream>
 #include <direct.h>
 
 //const double G   = 9.80665;
@@ -27,7 +27,7 @@ typedef void *TEST_HANDLE;
 #define SM_CYVIRTUALSCREEN      79
 
 void errhandler(LPTSTR pszFile, HWND hwnd) {
-   sprintf(oapiDebugString(), "Error: %c120", pszFile);
+   sprintf(oapiDebugString(), "Error: %120s", pszFile);
 }
 
 
